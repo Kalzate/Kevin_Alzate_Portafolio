@@ -1,0 +1,414 @@
+
+.contenedor{            
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    place-items: center;
+}        
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 1px;
+    color: white;
+    padding: 40px;
+    background: rgb(17, 21, 43);
+    columns: 2 50px;              
+    column-gap: 40px;
+}
+
+.card p{ 
+    text-align: justify;
+    margin: 0;
+    line-height: 25px;
+    padding-top: 50px;;
+}
+.card img{
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+/*----------Nuevo----------------*/
+
+#carrusel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 1px;
+    color: white;
+    padding: 40px;
+    background: rgb(0, 0, 0);
+    columns: 4 50px;              
+    column-gap: 20px;
+    background-color: red;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#galeria>div{
+    text-align: justify;
+    height:400;
+    width: 250px;
+    cursor: pointer;
+}
+
+
+#galeria img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#galeria h3{
+    text-align: center;
+}
+
+
+#galeria>div :hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+#galeria>div {overflow:hidden;}
+
+
+
+/*aca inicia el carrusel original*/
+.card_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 1px;
+    color: white;
+    padding: 40px;
+    background: rgb(0, 0, 0);
+    columns: 3 150px;              
+    column-gap: 20px;
+   
+}
+
+.colum1{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   cursor: pointer;
+   border-radius: 10px;
+   margin: 0 auto;
+}
+.colum1 img{
+    width: 300px;
+    height: 250px;
+}
+
+.colum2{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   cursor: pointer;
+   border-radius: 10px;
+   margin: 0 auto;
+}
+.colum2 img{
+    width: 300px;
+    height: 250px;
+}
+
+.colum3{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   cursor: pointer;
+   border-radius: 10px;
+   margin: 0 auto;
+}
+.colum3 img{
+    width: 300px;
+    height: 250px;
+}
+
+.colum4{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.colum4 img{
+    width: 300px;
+    height: 250px;
+}
+.card_2 p{
+    text-align: center;
+}
+.contenedor_secundario h1{
+background: #000;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+color: white;
+padding-top: 50px;
+}
+
+.colum1 :hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.colum1 {overflow:hidden;}
+
+.colum2 :hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.colum2 {overflow:hidden;}
+
+.colum3 :hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.colum3 {overflow:hidden;}
+
+.colum4 :hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.colum4 {overflow:hidden;}
+
+
+/*--------------------------------------------------------*/
+.card_info{
+    background-color: #000;
+    margin-top: -20px;
+    padding: 40px;
+}
+.cuadro{
+    width: calc( 100% + 10px);
+    height: auto;
+    margin: 0 auto;
+    background: rgb(17, 21, 43);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: none;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.cuadro label{
+    width: 40px;
+    height: 40px;
+    float: right;
+    position: relative;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 12px;
+    background: black;
+    cursor: pointer;
+    margin-top: -20px;
+}
+.cuadro h2{
+    text-align: center;
+}
+.cuadro div{
+    width: 100%;
+    display: block;
+    margin: 15px 0px;
+}
+
+.cuadro div h3{
+    margin-right: 20px;
+}
+
+.cuadro div h3:nth-child(1){
+    float: right;
+}
+
+.imagenes1{
+    width: 100%;
+    height: auto;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.imagenes1 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/*--------------------modal----------------------*/
+.imagenes img.thumbnail {
+    cursor: pointer;
+    margin: 5px;
+    width: 150px;
+    height: auto;
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenido del modal */
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Imagen grande en el modal */
+.modal-content img {
+    width: 100%;
+    height: 70vh; /* Altura del 70% del viewport */
+    object-fit: contain;
+}
+
+/* Pie de página del modal */
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Contenedor de miniaturas con scroll horizontal */
+.thumbnail-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.thumbnail-container img.carousel-thumbnail {
+    cursor: pointer;
+    margin: 0 5px;
+    width: 100px;
+    height: auto;
+}
+
+/* Botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+/*------------------------------------------------*/
+
+/*---------------------------------------------*/
+
+.card_3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 1px;
+    color: white;
+    padding: 40px;
+    background: rgb(17, 21, 43);
+    columns: 4 50px;              
+    column-gap: 40px;
+   
+}
+.contenedor_habilidades h1{
+    background: rgb(17, 21, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 50px;}
+.colum5{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   border-radius: 10px;
+}
+.colum5 img{
+    width: 155px;
+    height: 155px;
+    padding: 2px;
+}
+
+.colum6{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   border-radius: 10px;
+}
+.colum6 img{
+    width: 300px;
+    height: 250px;
+}
+
+.colum7{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   border-radius: 10px;
+}
+.colum7 img{
+    width: 300px;
+    height: 250px;
+}
+
+.colum8{ 
+    text-align: justify;
+   height:400;
+   width: 300px;
+   border-radius: 10px;
+}
+.colum8 img{
+    width: 155px;
+    height: 155px;
+    padding: 2px;
+}
+
+.card_4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 1px;
+    color: white;
+    padding: 40px;
+    background: rgb(0, 0, 0);
+    columns: 2 80px ;              
+    column-gap: 40px;
+   padding-left:300px;
+}
+.contenedor_contacto h1{
+    background: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 50px;}
+.colum9{ 
+   text-align: justify;
+   height:400;
+   width: 500px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.colum9 svg{
+    width: 155px;
+    height: 155px;
+    padding: 2px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.colum10{ 
+    text-align: justify;
+   height:400;
+   width: 500px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.colum10 svg{
+    width: 155px;
+    height: 155px;
+    padding: 2px;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+}
